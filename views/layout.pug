@@ -1,0 +1,33 @@
+doctype html
+
+html 
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    title Blog Introduccion a la Informatica
+
+    // Favicon
+    link(rel='icon' type='image/x-icon' href='/assets/favicon.ico')
+    
+    // Core theme CSS (includes Bootstrap)
+    link(href='/stylesheets/styles.css' rel='stylesheet')
+  body
+    // Responsive navbar
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='/') Blog Educativo
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/about') Acerca de
+            li.nav-item
+              a.nav-link(href='/contact') Contacto
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Blog 
+    block content 

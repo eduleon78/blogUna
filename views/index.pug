@@ -1,0 +1,133 @@
+extends layout
+
+block content
+  // Page header with logo and tagline
+  header.py-5.bg-light.border-bottom.mb-4
+    .container
+      .text-center.my-5
+        h1.fw-bolder Binvenidos a tu Blog sobre Informatica!
+        p.lead.mb-0 En este Blog conoceras todo sobre la Introducción a la Informatica
+  // Page content
+  .container
+    .row
+      // Blog entries
+      .col-lg-8
+        // Featured blog post
+        .card.mb-4
+          a(href='/hardware')
+            img.card-img-top(src='/images/Circuitos-integrados.jpg' alt='...')
+          .card-body
+            .small.text-muted Septiembre 1, 2024
+            h2.card-title Hardware
+            p.card-text
+              | Se denomina Circuito Integrado (CI) a circuito electrónico muy pequeño de materiales semiconductores (por ejemplo, silicio) tratados adecuadamente para conseguir los transistores, diodos, resistencias y condensadores necesarios para realizar una función electrónica específica
+            a.btn.btn-primary(href='/hardware') Leer más &rarr;
+        // Nested row for non-featured blog posts
+        .row
+          .col-lg-6
+            // Blog post
+            .card.mb-4
+              a(href='/computadora')
+                img.card-img-top(src='/images/pc.jpg' alt='...')
+              .card-body
+                .small.text-muted Septiembre 5, 2024
+                h2.card-title.h4 Computadora
+                p.card-text
+                  | Una computadora personal, computador personal u ordenador, conocida como PC.
+                a.btn.btn-primary(href='/computadora') Leer más &rarr;
+            // Blog post
+            .card.mb-4
+              a(href='#!')
+                img.card-img-top(src='/images/cpu.jpeg' alt='...')
+              .card-body
+                .small.text-muted Septiembre 15, 2024
+                h2.card-title.h4 CPU
+                p.card-text
+                  | Una CPU, o unidad central de procesamiento, es un componente de hardware y la unidad computacional.
+                a.btn.btn-primary(href='#!') Leer más &rarr;
+          .col-lg-6
+            // Blog post
+            .card.mb-4
+              a(href='#!')
+                img.card-img-top(src='/images/ergonomia.png' alt='...')
+              .card-body
+                .small.text-muted Septiembre 10, 2024
+                h2.card-title.h4 Ergonomía
+                p.card-text
+                  | La ergonomía es el conjunto de conocimientos científicos aplicados para que.
+                a.btn.btn-primary(href='#!') Leer más &rarr;
+            // Blog post
+            .card.mb-4
+              a(href='#!')
+                img.card-img-top(src='/images/ofi.jpeg' alt='...')
+              .card-body
+                .small.text-muted Septiembre 20, 2024
+                h2.card-title.h4 Ofimatica 
+                p.card-text
+                  | Es el conjunto de programas, aplicaciones, herramientas, métodos y materiales que son aplicados al trabajo de oficina, a través de.
+                a.btn.btn-primary(href='#!') Leer más &rarr;
+        // Pagination
+        nav(aria-label='Pagination')
+          hr.my-0
+          ul.pagination.justify-content-center.my-4
+            li.page-item.disabled
+              a.page-link(href='#' tabindex='-1' aria-disabled='true') Nuevo
+            li.page-item.active(aria-current='page')
+              a.page-link(href='#!') 1
+            li.page-item
+              a.page-link(href='#!') 2
+            li.page-item
+              a.page-link(href='#!') 3
+            li.page-item.disabled
+              a.page-link(href='#!') ...
+            li.page-item
+              a.page-link(href='#!') 15
+            li.page-item
+              a.page-link(href='#!') Anterior
+      // Side widgets
+      .col-lg-4
+        // Search widget
+        .card.mb-4
+          .card-header Search
+          .card-body
+            .input-group
+              input.form-control(type='text' placeholder='Enter search term...' aria-label='Enter search term...' aria-describedby='button-search')
+              button#button-search.btn.btn-primary(type='button') Go!
+        // Categories widget
+        .card.mb-4
+          .card-header Categorias
+          .card-body
+            .row
+              .col-sm-6
+                ul.list-unstyled.mb-0
+                  li
+                    a(href='#!') Hoja Excel
+                  li
+                    a(href='#!') Hardware
+                  li
+                    a(href='#!') Terminos 
+              .col-sm-6
+                ul.list-unstyled.mb-0
+                  li
+                    a(href='#!') Ofimatica
+                  li
+                    a(href='#!') Higiene
+                  li
+                    a(href='#!') Sistemas
+        // Side widget
+        .card.mb-4
+          .card-header Introduccion a la Informatica
+          .card-body
+            | La Informática es la ciencia del tratamiento automático de la información y el estudio de sus procesos de transmisión a través de máquinas automáticas denominadas ordenadores. Abarca, además, los aspectos ligados con la elaboración, creación, empleo y mantenimiento de los sistemas de procesamiento de dicha información.!
+  // Footer
+  footer.py-5.bg-dark
+    .container
+      p.m-0.text-center.text-white Copyright &copy; Eduardo León 2024
+      p.m-0.text-center.text-white V-14.840.089 Introdución a la Informatica
+      p.m-0.text-center.text-white Profesor: Ángel González
+
+  // Bootstrap core JS
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+  // Core theme JS
+  script(src='/javascripts/scripts.js')
+
