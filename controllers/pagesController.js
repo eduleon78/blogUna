@@ -18,6 +18,27 @@ module.exports = {
 
     computadora: (req, res, next) => {
         res.render('computadora');
+    },
+
+    cpu: (req, res, next) => {
+        res.render('cpu');
+    },
+
+    ergonomia: (req, res, next) => {
+        res.render('ergonomia');
+    },
+
+    ofimatica: (req, res, next) => {
+        res.render('ofimatica');
+    },
+
+    terminologia: (req, res, next) => {
+        res.render('terminologia');
+    },
+
+    sistemas: (req, res, next) => {
+        res.render('sistemas');
     }
+
     
 }

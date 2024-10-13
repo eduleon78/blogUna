@@ -3,10 +3,28 @@ extends layout
 block content
   link(href='/stylesheets/style.css' rel='stylesheet')
   body
-    div.img 
-      img(src="/images/ram.jpeg", alt="")
-    div.principal  
-      h1 Hardware  
-    div.parrafo
-      p En computación e informática, se conoce como hardware (del inglés hard, rígido, y ware, producto, mercancía) al conjunto de los componentes materiales, tangibles, de un computador o un sistema informático. Incluye todas las partes mecánicas, eléctricas y electrónicas, sin considerar los programas y otros elementos digitales que  forman parte del software.
-  
+    //Header
+    .container.text-center.mt-5
+      img.mx-auto.d-block(src="/images/ram.jpeg" width="350px")
+      hr
+      h1.fw-bolder Que es el Hardware 📑
+      p.lead.mb-5.mt-4 
+        | En computación e informática, se conoce como hardware (del inglés hard, rígido, y ware, 
+        | producto, mercancía) al conjunto de los componentes materiales, tangibles, de un computador 
+        | o un sistema informático. Incluye todas las partes mecánicas, eléctricas y electrónicas, sin considerar 
+        | los programas y otros elementos digitales que  forman parte del software. 💻.
+        | De acuerdo con  la tarea que desempeña, el hardware se clasifica estas categorías principales:
+        | Hardware de Procesamiento. Hardware de Almacenamiento. Hardware de Entrada y de Salida.
+        | Ejemplos del hardware: Placa Madre, Procesador, Unidad de Almacenamiento, Memoria ram, Tajeta Grafica
+
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Eduardo León 2024
+        p.m-0.text-center.text-white V-14.840.089 Introdución a la Informatica
+        p.m-0.text-center.text-white Profesor: Ángel González
+
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='/javascripts/scripts.js')  

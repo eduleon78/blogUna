@@ -3,9 +3,24 @@ extends layout
 block content
   link(href='/stylesheets/style.css' rel='stylesheet')
   body
-    div.img 
-      img(src="/images/linux.jpeg", alt="")
-    div.principal  
-      h1 Contacto  
-    div.parrafo 
-      p Para contactarme puedes enviarme un correo a eduleon78@gmil.com, mi tlf es 0424-0587119, 
+    //Header
+    .container.text-center.mt-5
+      img.mx-auto.d-block(src="/images/linux.jpeg" width="350px")
+      hr
+      h1.fw-bolder Contacto
+      p.lead.mb-5.mt-4 
+        | Para contactarme puedes enviarme un correo: 📬 a eduleon78@gmil.com, mi tlf: 📲 es 0424-0587119, 
+        | Estoy ubicado: 🚩en la ciudad de porlamar, Municipio Mariño Estado Nueva Esparta. 
+        | Mi redes sociales: 📞🖥💻 son Instagram @eduleon78. Github: eduleon78 
+
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Eduardo León 2024
+        p.m-0.text-center.text-white V-14.840.089 Introdución a la Informatica
+        p.m-0.text-center.text-white Profesor: Ángel González
+
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='/javascripts/scripts.js') 

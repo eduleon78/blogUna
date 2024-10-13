@@ -3,9 +3,30 @@ extends layout
 block content
   link(href='/stylesheets/style.css' rel='stylesheet')
   body
-    div.img 
-      img(src="/images/cpu.jpeg", alt="")
-    div.principal  
-      h1 CPU o PC  
-    div.parrafo 
-      p Una CPU, o unidad central de procesamiento, es un componente de hardware y la unidad computacional central de un servidor. Los servidores y otros dispositivos inteligentes convierten los datos en señales digitales y realizan operaciones matemáticas en ellos. La CPU es el componente principal que procesa las señales y hace posible la computación. Actúa como el cerebro de cualquier dispositivo de computación. Obtiene instrucciones de la memoria, realiza las tareas necesarias y envía la salida a la memoria. Maneja todo tipo de tareas de computación necesarias para que el sistema operativo y las aplicaciones se ejecuten.
+    //Header
+    .container.text-center.mt-5
+      img.mx-auto.d-block(src="/images/computadora.jpg" width="350px")
+      hr
+      h1.fw-bolder Que es una computadora 💻
+      p.lead.mb-5.mt-4 
+        | La computadora es la herramienta más versátil, potente y revolucionaria que el ser humano ha creado 
+        | en su historia reciente. Representa el punto cumbre de la Revolución industrial, científica y tecnológica 
+        | que presenció el siglo XX después de la Segunda Guerra Mundial. Su presencia y popularización en nuestro
+        | tiempo no sólo cambió para siempre el modo de procesar la información en el mundo, sino también la manera 
+        | de trabajar y concebir el trabajo, las formas de comunicarse a larga distancia, las formas de ocio, y 
+        | muchas otras áreas de la vida cotidiana. Consisten fundamentalmente en un gran número de circuitos integrados, 
+        | componentes de apoyo y extensiones electrónicas. Sin embargo, las computadoras han cambiado radicalmente a lo 
+        | largo de su propia y rápida historia, pasando de ser enormes e incómodas instalaciones, a ocupar un lugar tan 
+        | pequeño como el bolsillo de nuestros pantalones, en el caso de los teléfonos inteligentes.
+
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Eduardo León 2024
+        p.m-0.text-center.text-white V-14.840.089 Introdución a la Informatica
+        p.m-0.text-center.text-white Profesor: Ángel González
+
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='/javascripts/scripts.js')  

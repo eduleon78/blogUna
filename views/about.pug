@@ -3,9 +3,27 @@ extends layout
 block content
   link(href='/stylesheets/style.css' rel='stylesheet')
   body
-    div.img 
-      img(src="/images/windows11.jpg", alt="")
-    div.principal  
-      h1 Todo sobre Eduardo Leon  
-    div.parrafo 
-      p Mi nombre es Eduardo Leon, soy cursante del primer semestre de la carrera Tsu. Mantenimiento de Sistemas Informaticos, Soy de la isla de Margarita 
+    //Header
+    .container.text-center.mt-5
+      img.mx-auto.d-block(src="/images/windows11.jpg" width="350px")
+      hr
+      h1.fw-bolder Todo sobre Eduardo León 📑
+      p.lead.mb-5.mt-4 
+        | Mi nombre es Eduardo Leon 👨‍🎓, soy cursante del primer semestre de la carrera Tsu. 
+        | Mantenimiento de Sistemas Informaticos, Soy de la isla de Margarita 🏝. Mi objetivo
+        | es desarrollarme en el area de la informatica 💻. desde siempre he estado interesado por la 
+        | computación y el internet 📡, y de forma independiente empece a investigar, luego realizar cursos en linea, 
+        | hasta que me decidi a formalizar una carrera universitaria por eso estoy aqui. y les presento mi blog educativo 
+        | Sobre Temas vistos durante el semestre. 🏁
+
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Eduardo León 2024
+        p.m-0.text-center.text-white V-14.840.089 Introdución a la Informatica
+        p.m-0.text-center.text-white Profesor: Ángel González
+
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='/javascripts/scripts.js') 
