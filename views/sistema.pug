@@ -1,0 +1,39 @@
+extends layout 
+
+block content
+  link(href='/stylesheets/style.css' rel='stylesheet')
+  body
+    //Header
+    .container.text-center.mt-5
+      img.mx-auto.d-block.p-3(src="/images/terminologia.jpg" width="350px")
+      hr
+      h1.fw-bolder Sistemas Operativos 💻
+    .section.mb5.p2
+      p.fs-5.lead.mb-1.mt-3.p-2
+        | El sistema operativo es un software fundamental en cualquier ordenador o dispositivo móvil. Actúa como un 
+        | intermediario entre el hardware y el usuario, gestionando los recursos del sistema y permitiendo la 
+        | ejecución de aplicaciones. Existen infinidad de sistemas operativos, siendo Windows, macOS, Linux los tres 
+        | más populares para ordenadores, y Android e iOS en dispositivos móviles. Estos sistemas no solo facilitan 
+        | la interacción con el dispositivo a través de interfaces gráficas o líneas de comando, también coordinan 
+        | las tareas internas como la gestión de memoria, los procesos y el almacenamiento. Sin un sistema operativo, 
+        | usar un dispositivo sería una tarea compleja y poco intuitiva que únicamente podrían llevar a cabo los 
+        | usuarios con conocimientos informáticos avanzados.
+      p.fs-5.lead.mb-5.mt-3.p-2
+        | El sistema operativo es la base sobre la que gira la actividad de un ordenador o un teléfono inteligente, 
+        | mientras que el software de aplicación son los programas diseñados para realizar tareas específicas sirviéndonos 
+        | de él. Algunos buenos ejemplos los encontramos en los procesadores de texto, los navegadores web o los juegos, 
+        | herramientas digitales que nos facilitan cualquier tipo de tarea. A diferencia de los sistemas operativos, que 
+        | gestionan el funcionamiento global del dispositivo, el software de aplicación depende del sistema operativo 
+        | para su ejecución y la gestión de sus recursos.
+
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright &copy; Eduardo León 2024
+        p.m-0.text-center.text-white V-14.840.089 Introdución a la Informatica
+        p.m-0.text-center.text-white Profesor: Ángel González
+
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='/javascripts/scripts.js') 

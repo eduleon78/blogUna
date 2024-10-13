@@ -37,7 +37,7 @@ module.exports = {
     },
 
     sistemas: (req, res, next) => {
-        res.render('sistemas');
+        res.render('sistema');
     }
 
     
